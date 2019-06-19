@@ -1,0 +1,69 @@
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+@font-face
+{
+   font-family: "Billionthine";
+   src: url("/assets/fonts/Billionthine.otf");
+   src: url("/assets/fonts/Billionthine.ttf") format("truetype");
+}
+body{
+    font-family: Fira Sans,sans-serif;
+    color: #fff;
+}
+:root{
+    font-size: 18px;
+}
+.title-brand{
+    font-family: Billionthine;
+    margin: 10% 0%;
+}
+.slogan-brand{
+    font-family: Billionthine;
+}
+@media (min-width: 576px) { 
+  .title-brand {
+    font-size: 4rem;
+  }
+  .slogan-brand{
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 768px) { 
+  .title-brand {
+    font-size: 5.5rem;
+  }
+  .slogan-brand{
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 992px) { 
+  .title-brand {
+    font-size: 7.5rem;
+  }
+  .slogan-brand{
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1200px) { 
+  .title-brand {
+    font-size: 9rem;
+  }
+  .slogan-brand{
+    font-size: 3.5rem;
+  }
+}
+.parallax-window1, .parallax-window2 {
+    min-height: 400px;
+    background: transparent;
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
