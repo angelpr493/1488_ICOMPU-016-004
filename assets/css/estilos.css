@@ -1,8 +1,4 @@
-@media only screen and (max-device-width: 1366px) {
-  .parallax {
-    background-attachment: scroll;
-  }
-}
+
 @font-face
 {
    font-family: "Billionthine";
@@ -10,8 +6,9 @@
    src: url("/assets/fonts/Billionthine.ttf") format("truetype");
 }
 body{
+    padding-top: 25px;
     font-family: Fira Sans,sans-serif;
-    color: #fff;
+    color: #777;
 }
 :root{
     font-size: 18px;
@@ -19,6 +16,9 @@ body{
 .title-brand{
     font-family: Billionthine;
     margin: 10% 0%;
+}
+.navbar-brand{
+    font-family: Billionthine;
 }
 .slogan-brand{
     font-family: Billionthine;
@@ -58,12 +58,65 @@ body{
     font-size: 3.5rem;
   }
 }
-.parallax-window1, .parallax-window2 {
-    min-height: 400px;
-    background: transparent;
-    
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+
+p cite{
+  font-size: 1.5rem;
+}
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+.caption span.border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+.info {
+  color:#ddd;
+  background-color:#282E34;
+  text-align:center;
+  padding:50px 80px;
+  text-align: justify;
+}
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+.parallax1, .parallax2, .parallax3, .parallax4, .parallax5{
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 400px;
+}
+.parallax1{
+  background-image: url('../img/background-1.jpg');
+}
+.parallax2 {
+  background-image: url('../img/background-2.jpg');
+}
+.parallax3 {
+  background-image: url('../img/background-3.jpg');
+}
+.parallax4 {
+  background-image: url('../img/background-4.jpg');
+}
+.parallax5 {
+  background-image: url('../img/background-5.jpg');
 }
